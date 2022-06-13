@@ -29,7 +29,6 @@ pipeline {
         }
 		stage('Login to stg-server and deploy the application') {
             steps {
-				sh 'docker run --name web -dit -p 8080:8080 mdrajibkhan/myimage:v1'
 				sh 'docker rm web -f'
 				sh 'docker run --name web -dit -p 8080:8080 mdrajibkhan/myimage:v1'
 				sshagent (credentials: ['slave-auth'])
