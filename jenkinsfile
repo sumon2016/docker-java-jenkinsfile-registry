@@ -32,7 +32,7 @@ pipeline {
 	   sh 'docker rm web -f'
 	   sh 'docker run --name web -dit -p 8080:8080 mdrajibkhan/myimage:v1'
 	   sshagent (credentials: ['slave-auth'])
-           sh "ssh -o StrictHostKeyChecking=no -l root@192.168.0.109"
+           sh "ssh -o StrictHostKeyChecking=no -l root@192.168.0.171"
 				
             }
         }
