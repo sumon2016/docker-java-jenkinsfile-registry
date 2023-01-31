@@ -1,1 +1,1 @@
-# A sample java base project with docker container, docker hub, tomcat, jenkins
+# A sample java base project using by docker container, docker hub, tomcat, jenkins
