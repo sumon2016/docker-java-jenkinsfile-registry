@@ -48,7 +48,7 @@ public class CalculatorTest extends TestCase {
 	}
 
 	public void testMultiply() {
-		Assert.assertEquals(cal.multiply(10, 20), 200);
+		Assert.assertEquals(cal.multiply(30, 20), 200);
 	}
 	
 	public void testAddNew() {
